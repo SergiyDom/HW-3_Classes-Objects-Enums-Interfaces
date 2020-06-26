@@ -1,19 +1,20 @@
 package com.homework_3.task_3;
 
-public class Car implements CarOnn, CarOff, CarCanRide, CarSpeed {
+public class Car implements CarFunction {
     boolean onn;
     boolean off;
     boolean ride;
     int speed;
 
-    public Car(){}
+    public Car() {
+    }
 
-    public Car(boolean onn, int speed){
+    public Car(boolean onn, int speed) {
         this.onn = onn;
         this.speed = speed;
     }
 
-    public Car(boolean onn, boolean off, boolean ride, int speed){
+    public Car(boolean onn, boolean off, boolean ride, int speed) {
         this.onn = onn;
         this.off = off;
         this.ride = ride;
